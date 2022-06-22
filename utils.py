@@ -10,6 +10,7 @@ from nltk.corpus import stopwords
 stemmer = PorterStemmer()
 stops = stopwords.words("english")
 
+
 def pad(words: list, seq_length: int = 100):
     """
     Pad and/or Truncate text to seq_length
@@ -69,7 +70,8 @@ def preprocess(text: str) -> str:
 
 class Modes(Enum):
     """
-        Modes for app
+    Modes for app
     """
+
     CLI = "cli"
     GRADIO = "gradio"
